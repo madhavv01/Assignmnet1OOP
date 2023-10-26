@@ -8,6 +8,9 @@ public class ques8 {
 
         System.out.print("Enter a number: ");
         double number = kb.nextDouble();
+        
+        if(number < 0)
+        	System.out.print("Invalid number. ");
 
         double squareRoot = Math.sqrt(number);
 

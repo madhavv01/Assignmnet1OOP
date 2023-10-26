@@ -1,4 +1,4 @@
-package Activity_24thoct;
+package oct24;
 import java.util.Scanner;
 public class ques4 {
 
