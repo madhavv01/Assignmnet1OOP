@@ -4,10 +4,10 @@ public class ques26 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 
         System.out.print("Enter the total purchase amount: $");
-        double purchaseAmount = scanner.nextDouble();
+        double purchaseAmount = kb.nextDouble();
 
         double discount = calculateDiscount(purchaseAmount);
 
@@ -15,19 +15,19 @@ public class ques26 {
         double discountedAmount = purchaseAmount - discount;
         System.out.println("Your discounted total is: $" + discountedAmount);
 
-        scanner.close();
+        kb.close();
     }
 
     public static double calculateDiscount(double purchaseAmount) {
         double discount = 0.0;
 
         if (purchaseAmount >= 100) {
-            discount = 10; // 10% discount for purchases over $100
+            discount = purchaseAmount * 0.1; // 10% discount for purchases over $100
         } else if (purchaseAmount >= 50) {
-            discount = 5; // 5% discount for purchases over $50
+            discount = purchaseAmount * 0.05; // 5% discount for purchases over $50
         }
 
-        return (discount / 100) * purchaseAmount;
+        return discount;
     }
 
 

@@ -18,21 +18,20 @@ public class ques15 {
         System.out.print("Enter the fourth number: ");
         double num4 = input.nextDouble();
 
-        double largest = num1;
         
-        if (num2 > largest) {
-            largest = num2;
+        if (num1>=num2 && num1>=num3 && num1>=num4) {
+        	System.out.println("Num 1 is the largest ");
         }
 
-        if (num3 > largest) {
-            largest = num3;
+        else if (num2>=num1 && num2>=num3 && num2>=num4) {
+        	System.out.println("Num 2 is the largest ");
         }
 
-        if (num4 > largest) {
-            largest = num4;
-        }
+        else if (num3>=num1 && num3>=num2 && num3>=num4) {
+        	System.out.println("Num 1 is the largest ");
+        }else
 
-        System.out.println("The largest number is: " + largest);
+        System.out.println("Num 4 is the largest ");
         input.close();
 	}
 

@@ -4,21 +4,21 @@ public class ques33 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
-        int reversedNumber = 0;
+        int number = kb.nextInt();
+        int reversed = 0;
 
         while (number != 0) {
             int digit = number % 10;
-            reversedNumber = reversedNumber * 10 + digit;
+            reversed = reversed * 10 + digit;
             number /= 10;
         }
 
-        System.out.println("Reversed number: " + reversedNumber);
+        System.out.println("Reversed number: " + reversed);
 
-        scanner.close();
+        kb.close();
 
 	}
 

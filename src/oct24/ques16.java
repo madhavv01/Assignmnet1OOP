@@ -9,18 +9,15 @@ public class ques16 {
 	        System.out.print("Enter a number: ");
 	        int number = sq.nextInt();
 
-	        if (isPerfectSquare(number)) {
+	        int sqrt = (int) Math.sqrt(number);
+	        
+	        
+	        if (sqrt * sqrt == number) {
 	            System.out.println(number + " is a perfect square.");
 	        } else {
 	            System.out.println(number + " is not a perfect square.");
 	            sq.close();
 	        }
-	    }
-
-	   
-	    public static boolean isPerfectSquare(int number) {
-	        int sqrt = (int) Math.sqrt(number);
-	        return sqrt * sqrt == number;
 	        
 	}
 

@@ -4,10 +4,10 @@ public class ques34 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        int number = kb.nextInt();
 
         System.out.println("Multiplication Table for " + number + ":");
         
@@ -18,7 +18,7 @@ public class ques34 {
             i++;
         }
 
-        scanner.close();
+        kb.close();
 
 	}
 

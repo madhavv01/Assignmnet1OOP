@@ -7,11 +7,11 @@ public class ques23 {
 		Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number (1-7): ");
-        int dayNumber = input.nextInt();
+        int num = input.nextInt();
 
         String day;
 
-        switch (dayNumber) {
+        switch (num) {
             case 1:
                 day = "Monday";
                 break;
@@ -34,7 +34,7 @@ public class ques23 {
                 day = "Sunday";
                 break;
             default:
-                day = "Invalid day number. Please enter a number between 1 and 7.";
+                day = "Noday. Please enter a number between 1 and 7.";
         }
 
         System.out.println("The day of the week is: " + day);

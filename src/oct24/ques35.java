@@ -4,13 +4,13 @@ public class ques35 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 
         System.out.print("Enter the base number: ");
-        double base = scanner.nextDouble();
+        double base = kb.nextDouble();
 
         System.out.print("Enter the exponent: ");
-        int exponent = scanner.nextInt();
+        int exponent = kb.nextInt();
 
         double result = 1.0;
         int i = 0;
@@ -22,7 +22,7 @@ public class ques35 {
 
         System.out.println(base + " raised to the power of " + exponent + " is: " + result);
 
-        scanner.close();
+        kb.close();
     }
 
 
