@@ -8,7 +8,7 @@ public class Q50 {
 		int []arr= {12,33,44,56,28,11,16};
         System.out.println("Original Array : " + Arrays.toString(arr));     
 
-		int remove=0;   // give position of element you want to remove//
+		int remove=5;   // give position of element you want to remove//
 		for(int i= remove; i<arr.length-1; i++) {
 			arr[i]=arr[i+1];
 		}
