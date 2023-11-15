@@ -6,11 +6,9 @@ public class ques88 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input the grade
         System.out.print("Input the grade: ");
         char grade = scanner.next().toUpperCase().charAt(0); // Convert to uppercase for case-insensitivity
 
-        // Determine the equivalent description using a switch statement
         String description;
 
         switch (grade) {
@@ -33,7 +31,6 @@ public class ques88 {
                 description = "Invalid Grade";
         }
 
-        // Display the result
         System.out.println("You have chosen: " + description);
 
         scanner.close();
